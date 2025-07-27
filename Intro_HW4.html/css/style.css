@@ -1,22 +1,71 @@
+    body {
+      font-family: 'Kanit', sans-serif;
+      background-color: #fefefe;
+      color: #333;
+      line-height: 1.8;
+      max-width: 80%;
+      margin: 0 auto;
+      padding: 40px 20px;
+    }
+    
 h1 {
-  font-size: 2.5rem;
   text-align: center;
-  color: #2c3e50;
-  margin-bottom: 30px;
-  font-weight: bold;
-
+  font-size: 2.2em;
+  color: #222;
+  margin-bottom: 40px;
+  border-bottom: 2px solid #ffcc80;
+  display: inline-block;
+  padding-bottom: 10px;
 }
+
+.h1-wrapper {
+  text-align: center;
+}
+
+
 h2 {
   font-size: 1.8rem;
   color: #34495e;
   margin: 20px 0 15px 0;
   font-weight: bold;
 }
+
+    .nav-links {
+      text-align: right;
+      margin-bottom: 30px;
+    }
+
+    .nav-links a {
+      text-decoration: none;
+      color: #ff9800;
+      margin-left: 20px;
+      font-weight: bold;
+      transition: color 0.3s ease;
+    }
+
+    .nav-links a:hover {
+      color: #e65100;
+    }
+
+    p {
+      margin-bottom: 15px;
+      font-size: 1.05em;
+    }
+
+.gallery-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center; /* จัดให้อยู่ตรงกลาง */
+  gap: 10px; /* ระยะห่างระหว่างกล่อง */
+  padding: 20px;
+}
+
 div.gallery {
   margin: 5px;
   border: 1px solid #ccc;
-  float: left;
   width: 180px;
+  box-sizing: border-box;
+  text-align: center;
 }
 
 div.gallery:hover {
@@ -30,31 +79,48 @@ div.gallery img {
 
 div.desc {
   padding: 15px;
-  text-align: center;
 }
 
-table {
-    border-collapse: collapse; /* รวมขอบใน table เป็นเส้นเดียวกัน */
-    border-radius: 20px; /* โค้งมน */
-    overflow: hidden; /* ตัดส่วนเกินขอบออก */
-    border: 1px solid #050049;
-}
-th {
-    background-color: #4235eb;
-    color: white;
-    padding: 16px;
-    text-align: center;
-    font-weight: bold; /* ตัวหนา */
-}
+/* ตารางที่ 1: ข้อมูลนักศึกษา */
+    .student-table {
+      width: 100%;
+      border-collapse: collapse;
+      background-color: #e0f7fa;
+      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+      border-radius: 10px;
+      overflow: hidden;
+    }
 
-td {
-    background-color: #c7d8e3;
-    padding: 15px;
-    text-align: center;
-}
+    .student-table th, .student-table td {
+      padding: 12px;
+      border: 1px solid #b2ebf2;
+      text-align: center;
+    }
 
-tfoot {
-    background-color: #1f1884;
-    padding: 16px;
-    text-align: center;
-}
+    .student-table th {
+      background-color: #00bcd4;
+      color: white;
+    }
+
+
+    /* ตารางที่ 2: ประวัติส่วนตัว */
+    .profile-table {
+      width: 65%; /* ปรับขนาด */
+      margin: 0 auto; /* จัดตารางให้อยู่ตรงกลาง */
+      border-collapse: collapse;
+      background-color: #fff3e0;
+      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+      border-radius: 10px;
+      overflow: hidden;
+    }
+
+    .profile-table th, .profile-table td {
+      padding: 12px;
+      border: 1px solid #ffe0b2;
+      text-align: left;
+    }
+
+    .profile-table th {
+      background-color: #ff9800;
+      color: white;
+    }

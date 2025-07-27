@@ -8,14 +8,20 @@
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-    <p style="text-align: right;">
+    <div class="nav-links">
         <a href="index.html">[ข้อมูลหลักสูตร]</a>
         <a href="myprofile.html">[ประวัติส่วนตัว]</a>
-    </p>
-    <h1>ตารางรายวิชา เทอม 1/2568</h1>
-    <br>
-    <p align="center">รหัส : 67062043 ชื่อ : นายธนบดี เอี่ยมสะอาด รหัสนักศึกษา : 6806022510386</p>
-    <table border="1" width="85%" height="60%" align="center">
+    </div>
+        <div class="table-container">
+            <div class="h1-wrapper">
+                <h1>ตารางรายวิชา เทอม 1/2568</h1>
+            </div>
+                <p align="center">รหัส : 67062043 ชื่อ : นายธนบดี เอี่ยมสะอาด รหัสนักศึกษา : 6806022510386</p>
+
+      <!-- ตารางข้อมูลนักศึกษา -->
+  <div class="table-container">
+    <table class="student-table">
+      <thead>
         <tr>
             <th>รหัสวิชา</th>
             <th>ตอนเรียน</th>
@@ -23,6 +29,8 @@
             <th>หน่วยกิต</th>
             <th>สถานะชำระเงินตามรายวิชา</th>
         </tr>
+      </thead>
+      <tbody>
         <tr>
             <td>040203123</td>
             <td>1</td>
@@ -51,7 +59,7 @@
             <td>3(2-2-5)</td>
             <td>ไม่มียอดชำระ</td>
         </tr>
-        <tr>
+                <tr>
             <td>080103063</td>
             <td>3</td>
             <td>Practical english</td>
@@ -69,6 +77,10 @@
             <td colspan="3">รวม 6 รายวิชา</td>
             <td colspan="2">18 หน่วยกิต</td>
         </tr>
+      </tbody>
     </table>
+  </div>
+
+
 </body>
 </html>
