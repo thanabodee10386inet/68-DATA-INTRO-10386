@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+  <meta charset="UTF-8">
+  <title>ฟอร์มสมัครเรียนต่อระดับปริญญาตรี</title>
+</head>
+<body>
+  <h1>แบบฟอร์มสมัครเรียนต่อระดับปริญญาตรี</h1>
+
+  <fieldset>
+    <legend>ข้อมูลส่วนตัว</legend>
+
+    <label>คำนำหน้าชื่อ:
+      <select name="prefix">
+        <option>นาย</option>
+        <option>นางสาว</option>
+        <option>นาง</option>
+      </select>
+    </label><br>
+
+    <label>ชื่อ: <input type="text" id="fieldset" name="firstname"></label><br>
+    <label>นามสกุล: <input type="text" id="lastname" name="lastname"></label><br>
+    <label>เลขประจำตัวประชาชน: <input type="text" id="id_number" maxlength="13" name="id_number"></label><br>
+    <label>วันเดือนปีเกิด: <input type="date" id="hbd" name="hbd"></label><br>
+    <label>อายุ (ปี): <input type="number" id="age" name="age"></label><br>
+
+    <label>เพศ:
+      <input type="radio" name="gender" value="ชาย">ชาย
+      <input type="radio" name="gender" value="หญิง">หญิง
+      <input type="radio" name="gender" value="ไม่ระบุ">ไม่ระบุ
+    </label><br>
+
+    <label>สัญชาติ: <input type="text" id="nationality" name="nationality"></label><br>
+    <label>เชื้อชาติ: <input type="text" id="ethnicity" name="ethnicity"></label><br>
+    <label>ศาสนา: <input type="text" id="religion" name="religion"></label><br>
+    <label>เบอร์โทรศัพท์: <input type="tel" id="phone" name="phone"></label><br>
+    <label>อีเมล: <input type="email" id="email" name="email"></label><br>
+    <label>ที่อยู่: <br><textarea id="address" name="address" rows="4" cols="50"></textarea></label>
+  </fieldset>
+<br>
+
+  <fieldset>
+    <legend>ข้อมูลการสมัครเรียน</legend>
+
+    <label>วุฒิที่จบมา:
+      <select name="qualification">
+        <option>ม.6</option>
+        <option>ปวช.</option>
+        <option>ปวส.</option>
+      </select>
+    </label><br>
+
+    <label>ชื่อสถานศึกษาที่จบ: <input type="text" id="school_name" name="school_name"></label><br>
+    <label>ปีที่จบ: <input type="number" id="graduation_year" name="graduation_year"></label><br>
+    <label>GPA: <input type="number" step="0.01" id="gpa" name="gpa"></label><br>
+
+    <label>สาขาที่สมัคร:
+      <select name="major">
+        <option>IT</option>
+        <option>ITI</option>
+        <option>INE</option>
+        <option>INET</option>
+      </select>
+    </label><br>
+
+    <label>เหตุผลที่เลือกสาขานี้: <br><textarea id="reason" name="reason" rows="4" cols="50"></textarea></label>
+  </fieldset>
+<br>
+
+  <fieldset>
+    <legend>ประวัติการศึกษา</legend>
+    <table border="1">
+      <tr>
+        <th>ระดับการศึกษา</th>
+        <th>สถานศึกษา</th>
+        <th>จังหวัด</th>
+        <th>ปีที่เข้า</th>
+        <th>ปีที่จบ</th>
+        <th>วุฒิที่ได้รับ</th>
+        <th>GPA</th>
+      </tr>
+      <tr>
+        <td>ประถมศึกษา</td>
+        <td><input type="text" name="edu1_school"></td>
+        <td><input type="text" name="edu1_province"></td>
+        <td><input type="text" name="edu1_start"></td>
+        <td><input type="text" name="edu1_end"></td>
+        <td><input type="text" name="edu1_degree"></td>
+        <td><input type="text" name="edu1_gpa"></td>
+      </tr>
+      <tr>
+        <td>มัธยมต้น</td>
+        <td><input type="text" name="edu2_school"></td>
+        <td><input type="text" name="edu2_province"></td>
+        <td><input type="text" name="edu2_start"></td>
+        <td><input type="text" name="edu2_end"></td>
+        <td><input type="text" name="edu2_degree"></td>
+        <td><input type="text" name="edu2_gpa"></td>
+      </tr>
+      <tr>
+        <td>มัธยมปลาย/ปวช./ปวส.</td>
+        <td><input type="text" name="edu3_school"></td>
+        <td><input type="text" name="edu3_province"></td>
+        <td><input type="text" name="edu3_start"></td>
+        <td><input type="text" name="edu3_end"></td>
+        <td><input type="text" name="edu3_degree"></td>
+        <td><input type="text" name="edu3_gpa"></td>
+      </tr>
+    </table>
+  </fieldset>
+<br>
+
+  <fieldset>
+    <legend>แนบเอกสาร</legend>
+    <label>แนบไฟล์สำเนาบัตรประชาชนและวุฒิการศึกษา: 
+      <input type="file" name="documents" multiple>
+    </label>
+  </fieldset>
+<br>
+
+  <fieldset>
+    <legend>ยืนยันและส่งฟอร์ม</legend>
+    <label><input type="checkbox" name="agree"> ฉันยอมรับเงื่อนไขการสมัคร</label><br><br>
+    <input type="submit" value="ส่งฟอร์ม">
+    <input type="reset" value="ล้างข้อมูล">
+  </fieldset>
+</body>
+</html>
